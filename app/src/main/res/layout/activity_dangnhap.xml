@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/background_film"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="#a6212a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Đăng Nhập"
+            android:textSize="55sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email@gmail.com"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#801414"
+            android:background="@drawable/button_select_login"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoặc"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TẠO TÀI KHOẢN MỚI"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#1e861b"
+            android:background="@drawable/button_select_register"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

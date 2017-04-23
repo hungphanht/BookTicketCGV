@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#181818"
     android:clipChildren="false"
     android:clipToPadding="false"
     android:gravity="center"
@@ -13,48 +13,33 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.1"
         android:orientation="horizontal">
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@mipmap/ic_launcher" />
-
+            android:background="@mipmap/ic_launcher_round" />
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
             android:text="CGV"
+            android:textColor="#ffffff"
             android:textSize="35sp"
             android:textStyle="bold" />
+
     </LinearLayout>
-
-    <!--<com.gigamole.navigationtabstrip.NavigationTabStrip-->
-        <!--android:id="@+id/nts"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="40dp"-->
-        <!--android:layout_marginEnd="25dp"-->
-        <!--android:layout_marginLeft="5dp"-->
-        <!--android:layout_marginRight="5dp"-->
-        <!--android:layout_marginStart="25dp"-->
-        <!--app:nts_active_color="@android:color/black"-->
-        <!--app:nts_color="#ffa70b"-->
-        <!--app:nts_gravity="bottom"-->
-        <!--app:nts_inactive_color="@android:color/darker_gray"-->
-        <!--app:nts_size="20sp"-->
-        <!--app:nts_type="line"-->
-        <!--app:nts_weight="3dp"/>-->
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
-        android:orientation="vertical">
+        android:layout_weight="0.1"
+        android:gravity="bottom"
+        android:background="#e7e5e5"
+        android:orientation="horizontal">
+
         <com.gigamole.navigationtabstrip.NavigationTabStrip
             android:id="@+id/nts"
             android:layout_width="match_parent"
@@ -64,28 +49,29 @@
             android:layout_marginRight="5dp"
             android:layout_marginStart="25dp"
             app:nts_active_color="@android:color/black"
-            app:nts_color="#ffa70b"
             app:nts_gravity="bottom"
             app:nts_inactive_color="@android:color/darker_gray"
-            app:nts_size="20sp"
+            app:nts_size="15sp"
             app:nts_type="line"
-            app:nts_weight="3dp"/>
+            app:nts_weight="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_main">
+            android:background="#00ffffff">
 
             <com.example.deleting.bookticketcgv.utils.NonScrollableViewPager
                 android:id="@+id/vp_main"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="@drawable/overlay_top"
-                android:cacheColorHint="#00000000"/>
 
         </FrameLayout>
     </LinearLayout>
@@ -93,42 +79,93 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.1"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/txtTenPhim"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Kong: Dao Dau Lau"
-            android:textSize="15sp" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txtThoiGian"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="125 Phút"
-            android:textSize="15sp" />
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:gravity="bottom|left"
+                    android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnDatVe"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Đặt Vé"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/txtTenPhim"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:text="50 Sắc Thái"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:src="@drawable/new_image" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:gravity="top|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtThoiGian"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2giờ 16phút 14 thg 4 2017"
+                        android:textColor="#6c6c6c"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.3"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDatVe"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_select"
+                    android:text="Đặt Vé"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
